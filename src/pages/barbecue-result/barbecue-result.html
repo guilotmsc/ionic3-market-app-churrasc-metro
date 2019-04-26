@@ -1,0 +1,200 @@
+<!--
+  Generated template for the BarbecueResultPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Churrascômetro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content> 
+	<div style="text-align: center; padding: 5px">	
+		<p>Churrasco com 4 horas de duração para {{ adtH }} homens, {{ adtM }} mulheres e {{ chd }} crianças.</p>
+	</div>
+
+	<!-- sessao carnes -->
+	<ion-item class="margem">
+		<p item-start><b>Carnes</b></p>
+		<p item-end><b>Quantidade</b></p>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/carne.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>CARNE BOVINA</b></p>
+			<p>(corte para grelha)</p>
+		</div>
+		<div item-end><p><b>{{carne}} g</b></p></div>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/linguica.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>LINGUIÇA</b></p> 
+		</div>
+		<div item-end><p><b>{{linguica}} g</b></p></div>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/frango.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>FRANGO</b></p>
+			<p>(coxa ou asa)</p>
+		</div>
+		<div item-end><p><b>{{frango}} g</b></p></div>
+	</ion-item>  
+
+	<!-- sessao bebidas -->
+	<ion-item class="margem">
+		<p item-start><b>Bebidas</b></p>
+		<p item-end><b>Quantidade</b></p>
+	</ion-item> 
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/agua.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>ÁGUA</b></p>
+			<p>(garrafa 1L)</p>
+		</div>
+		<div item-end><p><b>{{agua}}</b></p></div>
+	</ion-item> 
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/cerveja.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>CERVEJA</b></p>
+			<p>(lata 350ml)</p>
+		</div>
+		<div item-end><p><b>{{cerveja}} un</b></p></div>
+	</ion-item>
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/refri.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>REFRIGERANTE</b></p>
+			<p>(garrafa 2L)</p>
+		</div>
+		<div item-end><p><b>{{refri}} un</b></p></div>
+	</ion-item>   
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/grill.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>SUCO</b></p>
+			<p>(garrafa 2L)</p>
+		</div>
+		<div item-end><p><b>{{suco}} un</b></p></div>
+	</ion-item>  
+
+	 <!-- sessao acompanhamentos  -->
+	<ion-item class="margem">
+		<p item-start><b>Acompanhamentos</b></p>
+		<p item-end><b>Quantidade</b></p>
+	</ion-item> 
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/cebola.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>CEBOLA</b></p> 
+		</div>
+		<div item-end><p><b>{{cebola}} un</b></p></div>
+	</ion-item> 
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/farofa.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>FAROFA TEMPERADA</b></p> 
+			<p>(pacote 500g)</p>
+		</div>
+		<div item-end><p><b>{{farofa}} un</b></p></div>
+	</ion-item> 
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/pao.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>PÃES</b></p> 
+		</div>
+		<div item-end><p><b>{{pao}} un</b></p></div>
+	</ion-item> 
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/sal.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>SAL GROSSO</b></p> 
+			<p><b>(pacote 1kg)</b></p> 
+		</div>
+		<div item-end><p><b>{{sal}} un</b></p></div>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/tomate.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>TOMATE</b></p>
+		</div>
+		<div item-end><p><b>{{tomate}} un</b></p></div>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/vinagre.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>VINAGRE</b></p> 
+			<p><b>(garrafa 750ml)</b></p> 
+		</div>
+		<div item-end><p><b>{{vinagre}} un</b></p></div>
+	</ion-item>  
+
+	<!-- sessao outros -->
+	<ion-item class="margem">
+		<p item-start><b>Outros</b></p>
+		<p item-end><b>Quantidade</b></p>
+	</ion-item>
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/carvao.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>CARVÃO</b></p> 
+			<p><b>(pacote 8kg)</b></p> 
+		</div>
+		<div item-end><p><b>{{carvao}} un</b></p></div>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/copo.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>COPOS DESCARTÁVEIS</b></p>
+			<p>(pacote 100un)</p>
+		</div>
+		<div item-end><p><b>{{copos}} un</b></p></div>
+	</ion-item>  
+	<ion-item class="margem"> 
+		<ion-thumbnail item-start>
+	      <img src="assets/icon/papel.png">
+	    </ion-thumbnail>
+		<div>
+			<p><b>GUARDANAPOS</b></p> 
+			<p><b>(pacote 50un)</b></p> 
+		</div>
+		<div item-end><p><b>{{guardanapos}} un</b></p></div>
+	</ion-item> 
+</ion-content>

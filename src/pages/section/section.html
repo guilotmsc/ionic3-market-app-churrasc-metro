@@ -1,0 +1,36 @@
+<!--
+  Generated template for the SectionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhes da oferta</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content> 
+  <ion-card text-center>
+    <div align="center" style="margin-top: 7px">
+      <img src="{{item.imagem}}" style="width: 55%" />
+      <p style="margin-top: 5%"><b>{{item.nome}}</b></p>
+      <p style="margin-top: 3%"><b>De: R$ {{ item.preco_ant | number : '1.2-2'}}</b></p>
+
+      
+      <ion-badge style="font-size:20px; background-color: #5e4582; color: white">Por: R$ {{ item.preco | number : '1.2-2'}}</ion-badge>
+      
+      
+    </div>
+  </ion-card> 
+  <br />
+  <div style="background-color: #f1f1f1; text-align: center">
+        <p style="font-size: 85%; margin-top: 5px; margin-bottom: 5px">Válido até 17/03/2018, limite por CPF: 12un.</p>
+      </div>
+      <div style="margin: 5%">
+        <p style="color: gray">As ofertas podem ser utilizadas dentro do prazo de validade descrito na regra de cada promoção em todos os supermercados da rede. Elas são limitadas por pessoa e estão sujeitas a alteração de preços, quantidade de estoque e condições de pagamento sem aviso prévio, não sendo cumulativas com outras promoções realizadas. Reservamo-nos no direito de limitar a quantidade dos produtos por cliente e corrigir possíveis erros de digitação ou imagem que possam ocorrer. Imagens meramente ilustrativas.</p>
+      </div>
+</ion-content>

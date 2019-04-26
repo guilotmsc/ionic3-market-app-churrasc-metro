@@ -1,0 +1,39 @@
+page-barbecue {
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 79%;
+    width: 100%;
+    color: #fff;
+  }
+
+  .card-ios {
+	  margin: 0px;
+	  border-radius: 2px;
+	  width: calc(100%);
+	  font-size: 1.4rem;
+	  background: #fff;
+	  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	.label-ios {
+	  margin: 0px 0px 0px 0px;
+	}
+
+	.margem {
+		border-bottom: 1px solid #c8c7cc;
+	}
+}

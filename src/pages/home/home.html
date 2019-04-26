@@ -1,0 +1,47 @@
+<ion-header no-border>
+  <ion-navbar>
+  	<title> 
+  	</title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<!--   <ion-slides pager="false" autoplay="2000" loop="true" speed="1500" effect="fade" autoplayDisableOnInteraction="false">
+    <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
+    </ion-slide>
+  </ion-slides> -->
+ 
+ 
+  <ion-row style="margin-top: 10px">
+    <ion-col text-center>
+      <ion-card (click)="promo()">
+        <div align="center" style="margin-top: 7px">
+        <img src="assets/icon/oferta.png" style="width: 55%" />
+        <span class="item-block" style="color: black; padding: 5%; text-align: center">Ofertas</span></div>
+      </ion-card>
+    </ion-col>
+    <ion-col text-center>
+      <ion-card (click)="churrascometro()">
+        <div align="center" style="margin-top: 7px">
+        <img src="assets/icon/grill.png" style="width: 55%" />
+        <span class="item-block" style="color: black; padding-top: 5%">Churrascômetro</span></div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col text-center>
+      <ion-card (click)="local()">
+        <div align="center" style="margin-top: 7px">
+        <img src="assets/icon/mapa.png" style="width: 55%" />
+        <span class="item-block" style="color: black; padding: 5%">Localização</span></div>
+      </ion-card>
+    </ion-col>
+    <ion-col text-center>
+      <ion-card (click)="contato()">
+        <div align="center" style="margin-top: 7px">
+        <img src="assets/icon/contato.png" style="width: 55%" />
+        <span class="item-block" style="color: black; padding-top: 5%">Contato</span></div>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

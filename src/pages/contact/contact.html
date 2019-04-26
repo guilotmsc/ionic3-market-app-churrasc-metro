@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contatos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="adv-map">
+    <div padding>
+      <h2 style="text-align: center">Localização</h2>
+    </div>
+    
+    <div class="map-image">
+      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDIetm07PEFTc5vU9YXZ14Yrm04usEqzhY&q=Makro+–+Loja+Foz+do+Iguaçu" width="100%" height="200" frameborder="0" style="border:0"></iframe> 
+      <ion-fab right top>
+        <button ion-fab class="fab-map pop-in" (click)="seeInMap(card)">
+        <ion-icon name='pin'></ion-icon>
+      </button>
+      </ion-fab>
+    </div>
+    <ion-item (click)="placeTapped(place)">
+      <ion-icon color="subtle" large item-start name="cart"></ion-icon>
+      <h2>Supermercado Atacado</h2>
+      <p>R. Nelson da Cunha Júnior, 350 - Vila Perola</p>
+      <p>Foz do Iguaçu - PR, 85865-228</p>
+    </ion-item>
+   <!--  <ion-item actions>
+      <span item-start ion-text color="secondary" class="item-bold">{{card.ETA}}</span>
+      <span item-start ion-text color="subtle">{{card.distance}}</span>
+      <button ion-button color="primary" clear item-end icon-left (click)="getDirections(card)">
+      <ion-icon name='navigate'></ion-icon>
+      Start
+    </button>
+    </ion-item> -->
+  </ion-card>
+  <ion-card>
+    <div padding> 
+      <h2 style="text-align: center">Fale conosco</h2>
+    </div>
+    <div padding>
+      <p style="text-align: justify">Encaminhe um e-mail com suas sugestoes, duvidas ou criticas.</p>
+
+      <input class="form_input" type="text" name="username" value="" placeholder="Nome *">
+
+      <input class="form_input" type="email" name="password" value="" placeholder="Email *">
+
+      <input class="form_input" type="email" name="password" value="" placeholder="Telefone *">
+
+      <textarea class="form_input" size="100" placeholder="Mensagem *" ></textarea>
+     
+      <button ion-button block outline (click)="login()" style="color: #2756e8">Enviar</button>
+    </div>
+  </ion-card>
+
+    <ion-card>
+    <div padding> 
+      <h2 style="text-align: center">Redes sociais</h2>
+    </div>
+    <div padding>
+      <p style="text-align: justify">Acompanhe as ofertas tambem pelo Facebook, siga nossa pagina oficial.</p>
+      <img src="assets/imgs/facebook.png" style="width: 50%; position: block;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto; margin-top: 5%" align="center">
+    </div>
+  </ion-card>
+</ion-content>

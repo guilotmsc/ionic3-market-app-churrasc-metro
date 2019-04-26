@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ofertas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center">
+    <p>Promoção válida de 01/01/2018 até 31/01/2018</p>
+  </div>
+  <ion-list>
+    <ion-row style="margin-top: 10px">
+      <ion-col text-center *ngFor='let i of array'>
+        <ion-card (click)="informacoes(i)">
+          <div align="center" style="margin-top: 7px">
+            <img [src]="i.imagem" style="width: 55%" />
+            <p style="font-size: 50%; margin-top: 5%"><b>{{i.nome}}</b></p>
+            <p style="font-size: 30%">De: R$ {{ i.preco_ant | number : '1.2-2'}}</p>
+
+            
+            <ion-badge style="background-color: #5e4582; color: white">Por: R$ {{ i.preco | number : '1.2-2'}}</ion-badge>
+            <p style="font-size: 40%">Válido até 17/03/2018, limite por CPF: 12un.</p>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+<!--     <ion-item-sliding >
+      <ion-item>
+        <ion-thumbnail item-start>
+          
+        </ion-thumbnail>
+
+      </ion-item>
+    </ion-item-sliding> -->
+  </ion-list>
+</ion-content>
